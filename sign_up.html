@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Записаться на урок</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ribeye+Marrow&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css\style.css">
+</head>
+<body>
+    <header class="header">
+            <div class="header-content">
+                <div class="logo">RepKa</div>
+                <nav class="nav">
+                    <a href="main.html" class="nav-link">ГЛАВНАЯ</a>
+                    <a href="about.html" class="nav-link">ОБО МНЕ</a>
+                    <a href="blog.html" class="nav-link">БЛОГ</a>
+                    <a href="services.html" class="nav-link">УСЛУГИ</a>
+                    <a href="reviews.html" class="nav-link">ОТЗЫВЫ</a>
+                </nav>
+
+                <div class="menu-toggle">
+                    <span class="menu-toggle-icon"></span>
+                </div>
+
+                <a href="sign_up.html" class="cta-button-link hide-on-signup">
+                    <button class="cta-button">
+                        <span class="cta-icon">
+                            <img src="images\студентик иконка.png" alt="Иконка студента для регистрации" width="23" height="23">
+                        </span>
+                        <span>ЗАПИСАТЬСЯ НА УРОК</span>
+                    </button>
+                </a>
+            </div>
+    </header>
+    <main>
+        <section class="signup-hero-section">
+            
+            <div class="signup-header-banner animate-on-scroll delay-1">
+                <h1 class="signup-main-title">Начните свой путь к успеху прямо сейчас</h1>
+                <p class="signup-subtitle">Первый шаг к свободному английскому - всего в одном сообщении</p>
+                
+                <div class="signup-benefits-grid">
+                    <div class="benefit-item animate-on-scroll delay-2">
+                        <img src="images\Phone.png" alt="Иконка телефона" class="benefit-icon" width="24" height="24">
+                        <span>Ответ в течение 1 часа</span>
+                    </div>
+                    <div class="benefit-item animate-on-scroll delay-3">
+                        <img src="images\Gift.png" alt="Иконка подарка" class="benefit-icon" width="24" height="24">
+                        <span>Бесплатный пробный урок</span>
+                    </div>
+                    <div class="benefit-item animate-on-scroll delay-4">
+                        <img src="images\Diamond.png" alt="Иконка алмаза" class="benefit-icon" width="24" height="24">
+                        <span>Индивидуальный подход</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="signup-content-wrapper">
+                
+                <div class="signup-left-column animate-on-scroll delay-5">
+                    
+                    <h2 class="contact-heading">Свяжитесь со мной</h2>
+                    <p class="contact-description">Выберите удобный способ связи - отвечаю быстро и всегда на связи</p>
+                    
+                    <div class="contact-card contact-card-whatsapp">
+                        <img src="images\Phone Message.png" alt="Иконка сообщения в телефоне" class="card-icon" width="25" height="25">
+                        <div class="card-text">
+                            <span class="card-title">WhatsApp/Telegram</span>
+                            <span class="card-value">+7 977 922 50 52</span>
+                            <span class="card-note">Быстрый ответ в мессенджерах</span>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card contact-card-email">
+                        <img src="images\Letter.png" alt="Иконка почты" class="card-icon" width="25" height="25">
+                        <div class="card-text">
+                            <span class="card-title">Email</span>
+                            <span class="card-value">repka@mail.ru</span>
+                            <span class="card-note">Для подробных вопросов</span>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card contact-card-social">
+                        <img src="images\Speech Bubblee.png" alt="Иконка сообщения" class="card-icon" width="25" height="25">
+                        <div class="card-text">
+                            <span class="card-title">Социальные сети</span>
+                            <span class="card-value">VK, TikTok</span>
+                            <span class="card-note">Полезный контент и обновления</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-card contact-card-time">
+                        <img src="images\Clock.png" alt="Иконка часов" class="card-icon" width="25" height="25"><div class="card-text">
+                            <span class="card-title">Время работы</span>
+                            <span class="card-value">ПН-ПТ: 9:00-20:00 <br>СБ: 10:00-16:00 <br>ВС: выходной</span>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <div class="signup-right-column animate-on-scroll delay-6">
+
+                    <div class="success-message" style="display:none;">
+                        <p><strong>✅ Заявка успешно отправлена.</strong></p>
+                        <p>Свяжусь с вами в течение часа.</p>
+                    </div>
+
+                    <form class="trial-lesson-form" id="trialForm" novalidate>
+                        
+                        <h2 class="form-heading">Запись на пробный урок</h2>
+                        <p class="form-description">Заполните форму и я свяжусь с вами для бесплатной консультации</p>
+
+                        <label for="user-name" class="form-label">Ваше имя*</label>
+                        <input type="text" id="user-name" name="user-name" placeholder="Как к вам обратиться?" required>
+                        <div class="error-message" id="error-name" style="display:none;">Заполните это поле.</div>
+
+                        <label for="user-contact" class="form-label">Контакт для связи*</label>
+                        <input type="text" id="user-contact" name="user-contact" placeholder="Телефон или email" required>
+                        <div class="error-message" id="error-contact" style="display:none;">Заполните это поле.</div>
+
+                        <label for="user-level" class="form-label">Текущий уровень английского</label>
+                        <select id="user-level" name="user-level">
+                            <option value="" disabled selected>Выберите уровень</option>
+                            <option value="beginner">Beginner (A1)</option>
+                            <option value="intermediate">Intermediate (B1)</option>
+                            <option value="advanced">Advanced (C1)</option>
+                        </select>
+
+                        <label for="user-goal" class="form-label">Цель обучения</label>
+                        <select id="user-goal" name="user-goal">
+                            <option value="" disabled selected>Выберите цель</option>
+                            <option value="ielts">Подготовка к экзамену</option>
+                            <option value="business">Для работы/карьеры</option>
+                            <option value="general">Разговорный английский</option>
+                            <option value="school">Школьная программа</option>
+
+                        </select>
+                        
+                        <label for="user-info" class="form-label">Дополнительная информация</label>
+                        <textarea id="user-info" name="user-info" placeholder="Расскажите о ваших пожеланиях, целях или вопросах..."></textarea>
+                        
+                        <button type="submit" class="form-submit-button">Отправить заявку</button>
+                        
+                        <p class="confidentiality-note">Нажимая кнопку, вы соглашаетесь с <a href="#" class="confidentiality-link">политикой конфиденциальности</a></p>
+                    </form>
+                </div>
+            </div>
+
+        </section>
+    </main>   
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">RepKa</div>
+            
+            <div class="footer-nav-groups">
+
+                <a href="main.html" class="footer-link main-link">ГЛАВНАЯ</a>
+                
+                <div class="nav-group nav-group-left">
+                    <a href="services.html" class="footer-link">УСЛУГИ</a>
+                    <a href="reviews.html" class="footer-link">ОТЗЫВЫ</a>
+                </div>
+
+                <div class="nav-group nav-group-right">
+                    <a href="about.html" class="footer-link">ОБО МНЕ</a>
+                    <a href="blog.html" class="footer-link">БЛОГ</a>
+                </div>
+
+            </div>
+
+            <div class="social-links-container">
+                <a href="#" class="social-link">
+                    <img src="images\тик ток.png" alt="TikTok" width="73" height="73">
+                </a>
+                <a href="#" class="social-link">
+                    <img src="images\вк.png" alt="VK" width="73" height="73">
+                </a>
+                <a href="#" class="social-link">
+                    <img src="images\тг.png" alt="Telegram" width="73" height="73">
+                </a>
+                <a href="#" class="social-link">
+                    <img src="images\вацап.png" alt="WhatsApp" width="73" height="73">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="js\script.js"></script>
+</body>
+</html>

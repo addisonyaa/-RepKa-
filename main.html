@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ribeye+Marrow&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css\style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">RepKa</div>
+            <nav class="nav">
+                <a href="main.html" class="nav-link">ГЛАВНАЯ</a>
+                <a href="about.html" class="nav-link">ОБО МНЕ</a>
+                <a href="blog.html" class="nav-link">БЛОГ</a>
+                <a href="services.html" class="nav-link">УСЛУГИ</a>
+                <a href="reviews.html" class="nav-link">ОТЗЫВЫ</a>
+            </nav>
+
+            <div class="menu-toggle">
+                <span class="menu-toggle-icon"></span>
+            </div>
+
+            <a href="sign_up.html" class="cta-button-link">
+                <button class="cta-button">
+                    <span class="cta-icon">
+                        <img src="images\студентик иконка.png" alt="Иконка студента для регистрации" width="23" height="23">
+                    </span>
+                    <span>ЗАПИСАТЬСЯ НА УРОК</span>
+                </button>
+            </a>
+        </div>
+    </header>
+    <main>
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title animate-on-scroll delay-1">АНГЛИЙСКИЙ НА УРОВНЕ МАСТЕРА</h1>
+                
+                <div class="stats-container animate-on-scroll delay-2">
+                    <div class="stat-item">
+                        <span class="stat-number">150</span>
+                        <span class="stat-label">УСПЕШНЫХ СТУДЕНТОВ</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">96%</span>
+                        <span class="stat-label">ДОСТИГАЮТ ЦЕЛИ</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">8</span>
+                        <span class="stat-label">ЛЕТ ОПЫТА</span>
+                    </div>
+                </div>
+
+                <div class="main-info">
+                    <div class="image-with-stats">
+                        <img src="images\дед блонд главная.png" alt="Преподаватель" class="hero-image animate-on-scroll delay-3">
+                        <div class="stat-overlay stat-top animate-on-scroll delay-4">
+                            <span class="stat-label">ТОП-РЕПЕТИТОР 2025</span>
+                        </div>                         
+                        <div class="stat-overlay stat-ielts animate-on-scroll delay-5">
+                            <span class="stat-number">8.5</span>
+                            <span class="stat-label">СРЕДНИЙ IELTS</span>
+                        </div>
+                        <div class="stat-overlay stat-success animate-on-scroll delay-6">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">УСПЕХ СТУДЕНТОВ</span>
+                        </div>
+                    </div>
+
+                    <div class="text-and-actions">
+                        <p class="description-text">
+                            Инновационная методика обучения, <br>которая превращает изучение языка <br>в увлекательное путешествие
+                        </p>
+                        <p class="first-lesson-text">ПЕРВЫЙ УРОК - БЕСПЛАТНО!</p>
+                        <div class="action-buttons">
+                            <a href="sign_up.html" class="action-button start-button">НАЧАТЬ ОБУЧЕНИЕ</a>
+                            <a href="about.html" class="action-button learn-more-button">УЗНАТЬ БОЛЬШЕ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="reasons-section">
+            <div class="reasons-content">
+                <h2 class="reasons-title">ПОЧЕМУ СТУДЕНТЫ ВЫБИРАЮТ МЕНЯ</h2>
+                <p class="reasons-subtitle">Инновационный подход к обучению, который действительно работает</p>
+                
+                <div class="features-container">
+                    <div class="feature-card">
+                        <h3 class="card-title">УСКОРЕННОЕ ОБУЧЕНИЕ</h3>
+                        <p class="card-description">Методика, которая позволяет заговорить на английском в 3 раза быстрее</p>
+                        <div class="card-icon">
+                            <img src="images\Speed.png" alt="Иконка ускорения" width="90" height="90">
+                        </div>
+                    </div>
+
+                    <div class="feature-card">
+                        <h3 class="card-title">ГЕЙМИФИКАЦИЯ</h3>
+                        <p class="card-description">Обучение через игры и интерактивные задания — скучно не будет!</p>
+                        <div class="card-icon">
+                            <img src="images\Game Controller.png" alt="Иконка геймпада" width="90" height="90">
+                        </div>
+                    </div>
+
+                    <div class="feature-card">
+                        <h3 class="card-title">AI АНАЛИТИКА</h3>
+                        <p class="card-description">Умная система отслеживает прогресс и адаптирует программу под вас</p>
+                        <div class="card-icon">
+                            <img src="images\Bar Chart.png" alt="Иконка аналитики" width="90" height="90">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cta-bottom">
+                    <p class="cta-text">
+                        Готовы начать свое путешествие в мир английского? <br>
+                        Первый урок - бесплатно! Убедитесь в эффективности методики лично
+                    </p>
+                    <button class="action-button final-cta-button" id="openModalBtn">
+                        ПОЛУЧИТЬ БЕСПЛАТНЫЙ УРОК
+                    </button>
+                </div>
+            </div>
+        </section> 
+    </main>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">RepKa</div>
+            <div class="footer-nav-groups">
+                <a href="main.html" class="footer-link main-link">ГЛАВНАЯ</a>
+                <div class="nav-group nav-group-left">
+                    <a href="services.html" class="footer-link">УСЛУГИ</a>
+                    <a href="reviews.html" class="footer-link">ОТЗЫВЫ</a>
+                </div>
+                <div class="nav-group nav-group-right">
+                    <a href="about.html" class="footer-link">ОБО МНЕ</a>
+                    <a href="blog.html" class="footer-link">БЛОГ</a>
+                </div>
+            </div>
+            <div class="social-links-container">
+                <a href="#" class="social-link">
+                    <img src="images\тик ток.png" alt="TikTok" width="73" height="73">
+                </a>
+                <a href="#" class="social-link">
+                    <img src="images\вк.png" alt="VK" width="73" height="73">
+                </a>
+                <a href="#" class="social-link">
+                    <img src="images\тг.png" alt="Telegram" width="73" height="73">
+                </a>
+                <a href="#" class="social-link">
+                    <img src="images\вацап.png" alt="WhatsApp" width="73" height="73">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="js\script.js"></script>
+
+        <div id="registrationModal" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                    <div class="signup-right-column modal-form-override">
+
+                        <div class="success-message" id="modalSuccessMessage" style="display:none;">
+                            <p><strong>✅ Заявка успешно отправлена.</strong></p>
+                            <p>Свяжусь с вами в течение часа.</p>
+                        </div>
+
+                        <form class="trial-lesson-form" id="trialFormModal" novalidate>
+                            
+                            <h2 class="form-heading">Запись на пробный урок</h2>
+                            <p class="form-description">Заполните форму и я свяжусь с вами для бесплатной консультации</p>
+
+                            <label for="modal-user-name" class="form-label">Ваше имя*</label>
+                            <input type="text" id="modal-user-name" name="user-name" placeholder="Как к вам обратиться?" required>
+                            <div class="error-message" id="modal-error-name" style="display:none;">Заполните это поле.</div>
+
+                            <label for="modal-user-contact" class="form-label">Контакт для связи*</label>
+                            <input type="text" id="modal-user-contact" name="user-contact" placeholder="Телефон или email" required>
+                            <div class="error-message" id="modal-error-contact" style="display:none;">Заполните это поле.</div>
+
+                            <label for="modal-user-level" class="form-label">Текущий уровень английского</label>
+                            <select id="modal-user-level" name="user-level">
+                                <option value="" disabled selected>Выберите уровень</option>
+                                <option value="beginner">Beginner (A1)</option>
+                                <option value="intermediate">Intermediate (B1)</option>
+                                <option value="advanced">Advanced (C1)</option>
+                            </select>
+
+                            <label for="modal-user-goal" class="form-label">Цель обучения</label>
+                            <select id="modal-user-goal" name="user-goal">
+                                <option value="" disabled selected>Выберите цель</option>
+                                <option value="ielts">Подготовка к экзамену</option>
+                                <option value="business">Для работы/карьеры</option>
+                                <option value="general">Разговорный английский</option>
+                                <option value="school">Школьная программа</option>
+
+                            </select>
+                            
+                            <label for="modal-user-info" class="form-label">Дополнительная информация</label>
+                            <textarea id="modal-user-info" name="user-info" placeholder="Расскажите о ваших пожеланиях, целях или вопросах..."></textarea>
+                            
+                            <button type="submit" class="form-submit-button">Отправить заявку</button>
+                            
+                            <p class="confidentiality-note">Нажимая кнопку, вы соглашаетесь с <a href="#" class="confidentiality-link">политикой конфиденциальности</a></p>
+                        </form>
+                    </div>
+            </div>
+        </div>
+
+</body>
+</html>
